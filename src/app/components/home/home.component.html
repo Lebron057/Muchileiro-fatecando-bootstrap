@@ -33,16 +33,30 @@
           <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="#">Matérias</a>
         </li>
         
+        <!-- Utilizando dicas do chatGPT -->
         <!-- Botao valores -->
-        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+        <li
+        [ngClass]="{ 'item-selecionado': itemAtivo === 'valores'}"
+        class="nav-item d-flex align-items-center">
+
           <img src="assets\images\star-logo.png" alt="star logo">
-          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="#">Valores</a>
+          <a (mouseenter)="setItemAtivo('valores')" (mouseleave)="limparItemAtivo()" class="nav-link active" routerLink="home">Valores</a>
+
         </li>
         
         <!-- Botao sair -->
-        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+        <li 
+        [ngClass]="{ 'item-selecionado': itemAtivo === 'sair' }" 
+        class="nav-item d-flex align-items-center">
+          
           <img src="assets\images\log-in-logo.png" alt="log-out">
-          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" routerLink="">Sair</a>
+          <a
+          (mouseenter)="setItemAtivo('sair')"
+          (mouseleave)="limparItemAtivo()"
+          class="nav-link active" routerLink="">
+          Sair
+          </a>
+
         </li>
 
       </ul>
