@@ -1,0 +1,18 @@
+.image {
+    width: 30px;
+    height: 30px;
+}
+
+.ativo {
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.inativo {
+    background-color: gray;
+    color: black;
+}

@@ -1,0 +1,44 @@
+*{
+    font-family: poppins !important;
+}
+
+nav {
+    background-color: #21BC6B !important;
+}
+
+.navbar-brand {
+    color:white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.Logo-bag-white {
+    width: 40px;
+    height: 55.876312255859375px;
+    top: 18px;
+    left: 68px;
+}
+
+.img-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0px;
+
+}
+
+.guia-fatec {
+    line-height: 1.1;
+}
+
+.item-selecionado {
+    background-color: #35f592;
+    border-radius: 10px;
+}

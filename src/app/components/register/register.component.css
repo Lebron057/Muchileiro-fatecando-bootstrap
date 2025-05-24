@@ -1,0 +1,71 @@
+.Learning-bro-1{
+    width: 730px;
+    height: 724px;    
+    top: 100px;
+}
+
+.btn-entrar {
+    background-color: #21BC6B;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    transition: background-color 0.3s ease;
+    width: 400px;
+}
+
+.btn-entrar:hover {
+    background-color: #1da55f;
+}
+
+.btn-entrar:active {
+    transition: background-color 0s ease;
+    background-color: #18834c;
+    color: white;
+    border-width: 0;
+}
+
+h1 {
+    width: 234px;
+    height: 62px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.form-input {
+    color: #858E97;
+    width: 400px;
+    font-family: Poppins;
+}
+
+input::placeholder {
+    color: #CDD4DA;
+}
+
+.a-cadastrar {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #21BC6B;
+    transition: color 0.3s ease;
+}
+
+.a-cadastrar:hover {
+    color: #18834c;
+}
+
+.linha-cadastrar {
+    color: #ACB5BE;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0px;
+}

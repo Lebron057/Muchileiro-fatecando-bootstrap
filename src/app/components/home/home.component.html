@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-5 py-3">
+
+  <div class="container-fluid">
+    
+    <div class="d-flex align-items-center gap-3">
+      <img class="Logo-bag-white" src="assets\images\Logo-bag-white.png" alt="Logo-bag-white">
+      <a class="navbar-brand guia-fatec" routerLink="home">Guia do mochileiro<br>Fatecano</a> <!-- Não consegui quebrar a linha de forma natural -->
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <ul class="navbar-nav ms-auto gap-4">
+        
+        <!-- Botao home -->
+        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+          <img class="img-logo" src="assets\images\home-logo.png" alt="home-logo">
+          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        
+        <!-- Botao notificações ROTA PARA O COMPONENTE "TESTE"-->
+        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+          <img src="assets\images\bell-logo.png" alt="bell logo">
+          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="\teste">Notificações</a>
+        </li>
+        
+        <!-- Botao materias -->
+        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+          <img src="assets\images\book-logo.png" alt="book logo">
+          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="#">Matérias</a>
+        </li>
+        
+        <!-- Botao valores -->
+        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+          <img src="assets\images\star-logo.png" alt="star logo">
+          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="#">Valores</a>
+        </li>
+        
+        <!-- Botao sair -->
+        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
+          <img src="assets\images\log-in-logo.png" alt="log-out">
+          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" routerLink="">Sair</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</nav>

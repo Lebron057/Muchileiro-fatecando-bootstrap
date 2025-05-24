@@ -1,0 +1,46 @@
+<h1>PIKA</h1>
+
+<div class="form-groups d-flex flex-column gap-2">
+  <label for="password">Senha</label>
+  <img 
+    class="image"
+    [src]="visibilidadeSenha ? 'assets/images/favicon.ico' : 'assets/images/corvo.jpg'"
+    (click)="mostrarSenha()"
+    alt="icone"
+  >
+  <input
+    class="pass"
+    [type]="visibilidadeSenha ? 'text' : 'password'"
+    name="password"
+    id="password"
+    placeholder="Insira sua senha"
+  >
+</div>
+
+@if(mostrarTexto) {
+    Essa paragrafo só aparece se "mostrarTexto" for true
+} @else {
+    "mostrarTexto é false"
+}
+
+<button (click)="tornarTextoVisivel()">
+    clique aqui para tornar o texto visivel
+</button>
+
+<ol><br>
+
+  @for(aluno of alunos; track alunos) {
+    <li>
+      {{ aluno.nome }} - {{ aluno.idade }} anos
+    </li>
+  }
+</ol><br>
+
+<div [ngClass] = "{ 'ativo': isAtivo, 'inativo': !isAtivo }">
+  este bloco usa ngClass
+</div>
+
+<button (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()">
+  alterar estilo
+</button>
+
