@@ -42,3 +42,35 @@ nav {
     background-color: #35f592;
     border-radius: 10px;
 }
+
+.h1-termos {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+.sub-titulo {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #7A7786;
+}
+
+.btn-add-turma {
+    background-color: #21BC6B;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: white;
+    width: 216px;
+    height: 60px;
+    top: 178px;
+    left: 1156px;
+}
