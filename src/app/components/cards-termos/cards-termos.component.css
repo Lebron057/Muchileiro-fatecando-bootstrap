@@ -1,0 +1,24 @@
+.card-termo {
+    width: 311px;
+    height: 222px;
+    top: 346px;
+    left: 71px;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-termo:hover {
+    transform: scale(1.05);
+}
