@@ -8,16 +8,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-
-/* Eu fiz com base nos slides*/
-  isAtivo = false;
-
-  toggleAtivo(): void {
-    this.isAtivo = !this.isAtivo
-  }
-  
-/* ChatGPT */  
+export class HomeComponent {  
   itemAtivo: string = ''
 
   selecionarItem(item: string): void {
