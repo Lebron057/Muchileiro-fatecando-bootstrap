@@ -15,48 +15,34 @@
       
       <ul class="navbar-nav ms-auto gap-4">
         
-        <!-- Botao home -->
-        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
-          <img class="img-logo" src="assets\images\home-logo.png" alt="home-logo">
-          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" aria-current="page" href="/">Home</a>
+        <!-- Botão Home -->
+        <li [ngClass]="{ 'item-selecionado': itemAtivo === 'home' }" class="nav-item d-flex align-items-center">
+          <img class="img-logo" src="assets/images/home-logo.png" alt="home-logo">
+          <a (click)="selecionarItem('home')" class="nav-link active" aria-current="page" routerLink="home">Home</a>
         </li>
-        
-        <!-- Botao notificações ROTA PARA O COMPONENTE "TESTE"-->
-        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
-          <img src="assets\images\bell-logo.png" alt="bell logo">
-          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="\teste">Notificações</a>
-        </li>
-        
-        <!-- Botao materias -->
-        <li [ngClass]="{ 'item-selecionado': isAtivo}" class="nav-item d-flex align-items-center">
-          <img src="assets\images\book-logo.png" alt="book logo">
-          <a (mouseenter)="toggleAtivo()" (mouseleave)="toggleAtivo()" class="nav-link active" href="#">Matérias</a>
-        </li>
-        
-        <!-- Utilizando dicas do chatGPT -->
-        <!-- Botao valores -->
-        <li
-        [ngClass]="{ 'item-selecionado': itemAtivo === 'valores'}"
-        class="nav-item d-flex align-items-center">
 
-          <img src="assets\images\star-logo.png" alt="star logo">
-          <a (mouseenter)="setItemAtivo('valores')" (mouseleave)="limparItemAtivo()" class="nav-link active" routerLink="home">Valores</a>
-
+        <!-- Botão Notificações -->
+        <li [ngClass]="{ 'item-selecionado': itemAtivo === 'notificacoes' }" class="nav-item d-flex align-items-center">
+          <img src="assets/images/bell-logo.png" alt="bell logo">
+          <a (click)="selecionarItem('notificacoes')" class="nav-link active" routerLink="home">Notificações</a>
         </li>
-        
-        <!-- Botao sair -->
-        <li 
-        [ngClass]="{ 'item-selecionado': itemAtivo === 'sair' }" 
-        class="nav-item d-flex align-items-center">
-          
-          <img src="assets\images\log-in-logo.png" alt="log-out">
-          <a
-          (mouseenter)="setItemAtivo('sair')"
-          (mouseleave)="limparItemAtivo()"
-          class="nav-link active" routerLink="">
-          Sair
-          </a>
 
+        <!-- Botão Matérias -->
+        <li [ngClass]="{ 'item-selecionado': itemAtivo === 'materias' }" class="nav-item d-flex align-items-center">
+          <img src="assets/images/book-logo.png" alt="book logo">
+          <a (click)="selecionarItem('materias')" class="nav-link active" routerLink="home">Matérias</a>
+        </li>
+
+        <!-- Botão Valores -->
+        <li [ngClass]="{ 'item-selecionado': itemAtivo === 'valores' }" class="nav-item d-flex align-items-center">
+          <img src="assets/images/star-logo.png" alt="star logo">
+          <a (click)="selecionarItem('valores')" class="nav-link active" routerLink="home">Valores</a>
+        </li>
+
+        <!-- Botão Sair -->
+        <li [ngClass]="{ 'item-selecionado': itemAtivo === 'sair' }" class="nav-item d-flex align-items-center">
+          <img src="assets/images/log-in-logo.png" alt="log-out">
+          <a (click)="selecionarItem('sair')" class="nav-link active" routerLink="">Sair</a>
         </li>
 
       </ul>

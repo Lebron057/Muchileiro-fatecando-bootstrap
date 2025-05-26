@@ -20,11 +20,7 @@ export class HomeComponent {
 /* ChatGPT */  
   itemAtivo: string = ''
 
-  setItemAtivo(item: string): void {
+  selecionarItem(item: string): void {
     this.itemAtivo = item;
-  }
-
-  limparItemAtivo(): void {
-    this.itemAtivo = '';
   }
 }
