@@ -26,12 +26,15 @@ nav {
     height: 30px;
 }
 
+.section-titulo {
+    display: flex;
+}
+
 .nav-item {
     font-weight: 400;
     font-size: 22px;
     line-height: 130%;
     letter-spacing: 0px;
-
 }
 
 .guia-fatec {
@@ -88,4 +91,34 @@ nav {
 
 .sect-cads {
     padding-inline: 48px;
+}
+
+@media (max-width: 425px) {
+    .guia-fatec {
+        line-height: 1.1;
+        font-size: medium;
+    }
+    nav {
+        padding-block: 10px !important;
+        padding-inline: 0.5rem !important;
+        margin-top: 0px !important;
+    }
+    .section-titulo {
+        margin-top: 1rem !important;
+        padding: 8px !important;
+        display: block;
+    }
+    h1 {
+        font-size: xx-large !important;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 17px !important;
+        line-height: 130%;
+    }
+    .btn-add-turma {
+        align-items: end;
+        justify-items: end;
+        justify-content: end;
+    }
 }
