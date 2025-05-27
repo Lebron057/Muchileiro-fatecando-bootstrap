@@ -69,3 +69,33 @@ input::placeholder {
     line-height: 130%;
     letter-spacing: 0px;
 }
+
+@media (max-width: 425px) {
+    .img-logo-bag {
+        width: 84px;
+        height: 117.3402099609375px;
+        margin-top: 26px;
+    }
+    h1 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .linha-cadastrar {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        letter-spacing: 0px;
+    }
+    .a-cadastrar{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        letter-spacing: 0px;
+    }
+}
