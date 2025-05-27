@@ -22,3 +22,10 @@
 .card-termo:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 425px) {
+    .card-termo {
+        width: 211px;
+        height: 200px;
+    }
+}

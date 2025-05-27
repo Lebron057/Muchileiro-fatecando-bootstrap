@@ -53,13 +53,13 @@
 </nav>
 
 <!-- Titulo, subtitulo e +termos -->
-<section class="container-fluid align-items-center px-5 py-3 mt-5 section-titulo">
+<section class="container-fluid align-items-center section-titulo mt-5">
   <div>
     <h1 class="h1-termos">Termos</h1>
     <h3 class="sub-titulo">Qual termo gostaria de acessar hoje?</h3>
   </div>
 
-  <div class="ms-auto">  
+  <div class="div-add-turma ms-auto">  
     <button class="btn btn-add-turma d-flex align-items-center gap-3 justify-content-center">
       <p class="m-0" style="font-size: xx-large;">+</p>
       Adicionar turma
@@ -70,7 +70,7 @@
 
 <section class="d-flex align-items-center justify-content-center mt-5 sect-cads">
 
-  <div class="container d-flex flex-wrap align-items-center p-0">
+  <div class="container d-flex flex-wrap align-items-center p-0 div-card">
     @for (termo of termos; track termo.numero) {
       <app-cards-termos
         [numeroTermo]="termo.numero"

@@ -100,9 +100,18 @@ nav {
     }
     nav {
         padding-block: 10px !important;
-        padding-inline: 0.5rem !important;
+        padding-inline: 0px !important;
         margin-top: 0px !important;
     }
+    .btn-add-turma {
+        align-items: end;
+    }
+    .div-add-turma {
+        margin: 0px !important;
+        align-items: end;
+        justify-content: end;
+    }
+
     .section-titulo {
         margin-top: 1rem !important;
         padding: 8px !important;
@@ -116,9 +125,13 @@ nav {
         font-size: 17px !important;
         line-height: 130%;
     }
-    .btn-add-turma {
-        align-items: end;
-        justify-items: end;
-        justify-content: end;
+    .sect-cads {
+        padding: 0px !important;
+    }
+    .div-card{
+        min-width: 100% !important;
+        row-gap: 70px !important;
+        justify-content: center !important;
+        margin: 0px !important;
     }
 }
